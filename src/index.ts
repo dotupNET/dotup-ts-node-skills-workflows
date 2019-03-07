@@ -1,10 +1,17 @@
 // interfaces
 export * from './Enumerations';
-export * from './Interfaces/IWorkflowTemplateConfiguration';
-export * from './Interfaces/IWorkflowRequestHandler';
-export * from './Interfaces/IWorkflowStepHandler';
+export * from './Types';
+export * from './Interfaces/IWorkflowContext';
 export * from './Interfaces/IWorkflowHandler';
 export * from './Interfaces/IWorkflowQuestion';
+export * from './Interfaces/IWorkflowRequestHandler';
+export * from './Interfaces/IWorkflowStepHandler';
+export * from './Interfaces/IWorkflowTemplateConfiguration';
+// Plugin
+export * from './Plugin/Extensions';
+export * from './Plugin/ISkillWorkflowsPluginConfiguration';
+export * from './Plugin/SkillWorkflowsPlugin';
+
 export * from './WorkflowController';
 export * from './WorkflowHandler';
 export * from './WorkflowManager';
