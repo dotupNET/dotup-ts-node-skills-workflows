@@ -107,9 +107,10 @@ export class WorkflowManager<T> {
           }
         }
 
-        if (result === undefined) {
-          wc.getWorkflow().CurrentHandlerId = undefined;
-        }
+      // If we change the handler 
+      // if (result === undefined) {
+      //   wc.getWorkflow().CurrentHandlerId = undefined;
+      // }
 
     }
 
