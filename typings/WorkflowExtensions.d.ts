@@ -1,5 +1,5 @@
-import { IWorkflowContext } from '../src/Interfaces/IWorkflowContext';
-import { WorkflowModel } from '../src/WorkflowModel';
+import { IWorkflowContext } from '../dist/Interfaces/IWorkflowContext';
+import { WorkflowModel } from '../dist/WorkflowModel';
 
 declare module 'dotup-ts-node-skills/dist/Interfaces/ISessionAttributes' {
   interface ISessionAttributes {
