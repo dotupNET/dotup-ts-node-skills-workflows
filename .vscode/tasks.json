@@ -2,21 +2,6 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build typescript",
-      "type": "shell",
-      "command": "tsc",
-      "problemMatcher": "$tsc",
-      "args": [
-        "-p",
-        "\"${workspaceFolder}/tsconfig.json\""
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "dependsOn": "cleanup"
-    },
-    {
       "label": "cleanup",
       "type": "shell",
       "command": "npm",
@@ -39,21 +24,33 @@
     },
     {
       "type": "grunt",
-      "task": "tslint",
-      "problemMatcher": [
-        "$tslint5"
-      ]
-    },
-    {
-      "type": "npm",
-      "script": "release",
+      "task": "build",
       "problemMatcher": [
         "$tsc"
       ]
     },
     {
       "type": "grunt",
-      "task": "release",
+      "task": "serve",
+      "problemMatcher": [
+        "$tsc"
+      ]
+    },
+    {
+      "type": "grunt",
+      "task": "run",
+      "problemMatcher": []
+    },
+    {
+      "type": "grunt",
+      "task": "pre-publish",
+      "problemMatcher": [
+        "$tsc"
+      ]
+    },
+    {
+      "type": "grunt",
+      "task": "tslint",
       "problemMatcher": [
         "$tslint5"
       ]
@@ -62,14 +59,7 @@
       "type": "grunt",
       "task": "publish",
       "problemMatcher": [
-        "$tsc"
-      ]
-    },
-    {
-      "type": "grunt",
-      "task": "build",
-      "problemMatcher": [
-        "$tsc"
+        "$tslint5"
       ]
     }
   ]

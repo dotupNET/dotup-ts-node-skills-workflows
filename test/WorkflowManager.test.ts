@@ -1,3 +1,6 @@
+// tslint:disable: newline-per-chained-call
+// tslint:disable-next-line: no-implicit-dependencies
+import { expect } from 'chai';
 import { IRequestContext } from 'dotup-ts-node-skills';
 import { IWorkflowRequestHandler } from '../src/Interfaces/IWorkflowRequestHandler';
 import { WorkflowController } from '../src/WorkflowController';
@@ -20,8 +23,7 @@ describe('WorkflowManager', () => {
   it('should create an instance', () => {
     const h1 = new WorkflowRequestHandlerMock();
     const value = new WorkflowManager(h1, h1);
-    expect(value)
-      .toBeTruthy();
+    expect(value).instanceOf(WorkflowManager);
   });
 
 });
