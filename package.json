@@ -5,6 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
     "release": "npm run clean-build && npm run test-mocha && git push && npm run gh-pages && npm publish",
     "clean-dist": "rimraf dist",
     "clean-build": "rimraf dist && tsc",

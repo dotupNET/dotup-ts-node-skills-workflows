@@ -23,7 +23,7 @@ export class WorkflowRequestInterceptor implements RequestInterceptor {
   process(handlerInput: HandlerInput) {
     const sessionAttributes = <ISessionAttributes>handlerInput.attributesManager.getSessionAttributes();
 
-    if (sessionAttributes.getWorkflow() === undefined) {
+    if (sessionAttributes.getWorkflow === undefined || sessionAttributes.getWorkflow() === undefined) {
       const jm = new JsonManager();
       const copy = jm.Serialize(this.workflowManager.WorkflowTemplate);
       sessionAttributes.getWorkflow = () => jm.Parse(copy);

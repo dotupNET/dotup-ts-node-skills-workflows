@@ -3,6 +3,7 @@ import { LoggerFactory } from 'dotup-ts-logger';
 import { IPlugin } from 'dotup-ts-node-skills';
 import { WorkflowRequestInterceptor } from '../WorkflowRequestInterceptor';
 import { ISkillWorkflowsPluginConfiguration } from './ISkillWorkflowsPluginConfiguration';
+import { WorkflowRequestAdapter } from '../WorkflowRequestAdapter';
 
 export class SkillWorkflowsPlugin<T> implements IPlugin {
   private readonly config: ISkillWorkflowsPluginConfiguration<T>;
@@ -17,6 +18,9 @@ export class SkillWorkflowsPlugin<T> implements IPlugin {
 
     const requestInterceptor = new WorkflowRequestInterceptor(this.config.workflowManager);
     skillBuilder.addRequestInterceptors(requestInterceptor);
+
+    const workflowHandler = new WorkflowRequestAdapter();
+    skillBuilder.addRequestHandlers(workflowHandler);
   }
 
 }

@@ -21,3 +21,5 @@ export * from './WorkflowRequestAdapter';
 export * from './WorkflowRequestInterceptor';
 export * from './WorkflowStepHandler';
 export * from './WorkflowStepModel';
+
+// export * from '../typings/WorkflowExtensions';
