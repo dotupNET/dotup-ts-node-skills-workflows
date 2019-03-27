@@ -32,7 +32,7 @@ export class WorkflowRequestAdapter extends RequestAdapter {
     const requestReader = new RequestReader(handlerInput);
     const w = requestReader
       .getRequestAttributes()
-      .getworkflowContext();
+      .getWorkflowContext();
     const wfm = w.manager;
     const state = w.controller.getWorkflowState();
 
@@ -55,7 +55,7 @@ export class WorkflowRequestAdapter extends RequestAdapter {
   async handleRequest(context: IRequestContext): Promise<void> {
     const w = context.request
       .getRequestAttributes()
-      .getworkflowContext();
+      .getWorkflowContext();
 
     const wc = w.controller;
     const model = wc.getWorkflow();
@@ -98,7 +98,7 @@ export class WorkflowRequestAdapter extends RequestAdapter {
 
         case undefined:
           // tslint:disable-next-line:max-line-length
-          const e = `WorkflowRequestAdapter: workflow.CurrentStepState not set. request: ${methodToCall} | workflow: ${currentStep.name} | state: ${model.CurrentWorkflowStepState}`;
+          const e = `WorkflowRequestAdapter: workflow.CurrentWorkflowStepState not set. request: ${methodToCall} | workflow: ${currentStep.name} | state: ${model.CurrentWorkflowStepState}`;
           throw new Error(e);
       }
 

@@ -23,43 +23,17 @@
       "problemMatcher": "$tsc"
     },
     {
-      "type": "grunt",
+      "type": "gulp",
+      "task": "project-build",
+      "problemMatcher": [
+        "$gulp-tsc"
+      ]
+    },
+    {
+      "type": "gulp",
       "task": "build",
       "problemMatcher": [
         "$tsc"
-      ]
-    },
-    {
-      "type": "grunt",
-      "task": "serve",
-      "problemMatcher": [
-        "$tsc"
-      ]
-    },
-    {
-      "type": "grunt",
-      "task": "run",
-      "problemMatcher": []
-    },
-    {
-      "type": "grunt",
-      "task": "pre-publish",
-      "problemMatcher": [
-        "$tsc"
-      ]
-    },
-    {
-      "type": "grunt",
-      "task": "tslint",
-      "problemMatcher": [
-        "$tslint5"
-      ]
-    },
-    {
-      "type": "grunt",
-      "task": "publish",
-      "problemMatcher": [
-        "$tslint5"
       ]
     }
   ]

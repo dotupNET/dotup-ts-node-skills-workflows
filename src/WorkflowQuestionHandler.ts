@@ -88,7 +88,7 @@ export class WorkflowQuestionHandler<TPayload> extends WorkflowHandler<TPayload>
     const q = this.question;
     const wc = context.request
       .getRequestAttributes()
-      .getworkflowContext<TPayload>()
+      .getWorkflowContext<TPayload>()
       .controller;
 
     if (q.askAgain !== undefined) {

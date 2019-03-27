@@ -8,13 +8,14 @@ import { WorkflowModel } from '../WorkflowModel';
 declare module 'dotup-ts-node-skills/dist/Interfaces/ISessionAttributes' {
   export interface ISessionAttributes {
     // tslint:disable-next-line: no-any
-    getWorkflow<T>(): WorkflowModel<T>;
+    workflow: WorkflowModel<any>;
   }
 }
 
 declare module 'dotup-ts-node-skills/dist/Interfaces/IRequestAttributes' {
   export interface IRequestAttributes {
-    getworkflowContext<T>(): IWorkflowContext<T>;
+    getWorkflow<T>(): WorkflowModel<T>;
+    getWorkflowContext<T>(): IWorkflowContext<T>;
   }
 }
 
