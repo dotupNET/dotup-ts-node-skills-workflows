@@ -1,6 +1,6 @@
 {
   "name": "dotup-ts-node-skills-workflows",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "alexa typescript workflow skills",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -42,7 +42,7 @@
     "ask-sdk-runtime": "^2.4.0"
   },
   "peerDependencies": {
-    "dotup-ts-node-skills": "^0.3.2"
+    "dotup-ts-node-skills": "^0.3.4"
   },
   "devDependencies": {
     "dotup-ts-git-wrapper": "^1.0.0",
