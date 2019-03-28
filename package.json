@@ -35,7 +35,7 @@
   "homepage": "https://github.com/dotupNET/dotup-ts-node-skills-workflows#readme",
   "dependencies": {
     "dotup-ts-logger": "^0.0.13",
-    "dotup-ts-types": "^0.0.20",
+    "dotup-ts-types": "^0.0.22",
     "dotup-ts-json-serializer": "^0.0.4",
     "ask-sdk-model": "^1.13.0",
     "ask-sdk-core": "^2.5.1",
