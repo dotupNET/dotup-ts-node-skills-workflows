@@ -1,6 +1,6 @@
 {
   "name": "dotup-ts-node-skills-workflows",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "alexa typescript workflow skills",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -37,12 +37,13 @@
     "dotup-ts-logger": "^0.0.13",
     "dotup-ts-types": "^0.0.22",
     "dotup-ts-json-serializer": "^0.0.4",
-    "ask-sdk-model": "^1.13.0",
+    "dotup-ts-internationalization": "^1.0.7",
+    "ask-sdk-model": "^1.14.0",
     "ask-sdk-core": "^2.5.1",
     "ask-sdk-runtime": "^2.4.0"
   },
   "peerDependencies": {
-    "dotup-ts-node-skills": "^0.3.5"
+    "dotup-ts-node-skills": "^0.3.6"
   },
   "devDependencies": {
     "dotup-ts-git-wrapper": "^1.0.0",
@@ -58,7 +59,7 @@
     "@types/mocha": "^5.2.6",
     "chai": "^4.2.0",
     "mocha": "^6.0.2",
-    "dotup-ts-node-skills": "^0.3.5",
+    "dotup-ts-node-skills": "^0.3.6",
     "gh-pages": "^2.0.1",
     "rimraf": "^2.6.3",
     "ts-node": "^8.0.3",
